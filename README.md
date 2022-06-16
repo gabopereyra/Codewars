@@ -14,6 +14,7 @@
 <ul>
     <b>KYU 7</b>
     <li><a href="https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java">YouAreASquare</a></li>
+    <li><a href="https://www.codewars.com/kata/62a611067274990047f431a8/train/java">LengthAndTwoValues</a></li>
 </ul>
 <ul>
     <b>KYU 8</b>:
