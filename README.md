@@ -11,7 +11,10 @@
     <b>KYU 6</b>:
     <li><a href="https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/java">WhoLikesIt</a></li>
 </ul>
-
+<ul>
+    <b>KYU 7</b>
+    <li><a href="https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java">YouAreASquare</a></li>
+</ul>
 <ul>
     <b>KYU 8</b>:
     <li><a href="https://www.codewars.com/kata/577a98a6ae28071780000989/train/java">MaxAndMinFromAList</a></li>
