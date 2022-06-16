@@ -17,5 +17,6 @@
     <li><a href="https://www.codewars.com/kata/577a98a6ae28071780000989/train/java">MaxAndMinFromAList</a></li>
     <li><a href="https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/java">SumArray</a></li>
     <li><a href="https://www.codewars.com/kata/515e271a311df0350d00000f/train/java">SquareSum</a></li>
+    <li><a href="https://www.codewars.com/kata/59342039eb450e39970000a6/train/java">CountOddNumbers</a></li>
 </ul>
 
