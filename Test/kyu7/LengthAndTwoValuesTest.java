@@ -27,4 +27,26 @@ public class LengthAndTwoValuesTest {
         String[] actual = LengthAndTwoValues.alternate(n, firstValue, secondValue);
         Assertions.assertArrayEquals(expected, actual, String.format("For input (%d, \"%s\", \"%s\")%nExpected: %s%nActual: %s%n", n, firstValue, secondValue, Arrays.toString(expected), Arrays.toString(actual)));
     }
+
+    @Test
+    void smallArrayWithStream() {
+        assertEqualsWithStream(new String[]{"true", "false", "true", "false", "true"},
+                5, "true", "false");
+    }
+
+    @Test
+    void largerArrayWithStream() {
+        assertEqualsWithStream(new String[]{"blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red"},
+                20, "blue", "red");
+    }
+
+    @Test
+    void withZeroWithStream() {
+        assertEqualsWithStream(new String[0], 0, "lemons", "apples");
+    }
+
+    private void assertEqualsWithStream(String[] expected, int n, String firstValue, String secondValue) {
+        String[] actual = LengthAndTwoValues.alternateWithStream(n, firstValue, secondValue);
+        Assertions.assertArrayEquals(expected, actual, String.format("For input (%d, \"%s\", \"%s\")%nExpected: %s%nActual: %s%n", n, firstValue, secondValue, Arrays.toString(expected), Arrays.toString(actual)));
+    }
 }
