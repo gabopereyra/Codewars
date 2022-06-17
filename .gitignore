@@ -4,3 +4,4 @@
 /.idea/
 CodeWars.iml
 out/*
+/src/Main.java
