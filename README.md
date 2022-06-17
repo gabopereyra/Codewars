@@ -6,7 +6,7 @@
 
 <p align="justify">At the same time, the project contains tests for every exercise. Note: in general they will be the same tests that uses the app to check if you reach the requirements. The test follow the same rule for the classification on packages.</p>
 
-<p align="justify">Next, will find the links of the exercises that are solved in the repository. The links are to see the Katas (denomination gave it by Codewars for the proposals) on the website of Codewars. The names are the same of the classes, to make more easy to find the resolution on the code.</p>
+<p align="justify">Next, will find the links of the exercises that are solved in this repository. The links are to see the Katas (denomination gave it by Codewars for the proposals) on the website of Codewars. The names are the same of the classes, to make more easy to find the resolution on the code.</p>
 <ul>
     <b>KYU 6</b>:
     <li><a href="https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/java">WhoLikesIt</a></li>
@@ -15,6 +15,7 @@
     <b>KYU 7</b>
     <li><a href="https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java">YouAreASquare</a></li>
     <li><a href="https://www.codewars.com/kata/62a611067274990047f431a8/train/java">LengthAndTwoValues</a></li>
+    <li><a href="https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/java">TwoToOne</a></li>
 </ul>
 <ul>
     <b>KYU 8</b>:
