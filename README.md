@@ -11,7 +11,7 @@
     <b>KYU 6</b>:
     <li><a href="https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/java">WhoLikesIt</a></li>
     <li><a href="https://www.codewars.com/kata/565c0fa6e3a7d39dee000125/train/java">BrakingWell</a></li>
-    <li><a href="https://www.codewars.com/kata/514b92a657cdc65150000006/train/java"></a>MultiplesOf3Or5</li>
+    <li><a href="https://www.codewars.com/kata/514b92a657cdc65150000006/train/java">MultiplesOf3Or5</a></li>
 </ul>
 <ul>
     <b>KYU 7</b>
