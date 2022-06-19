@@ -1,6 +1,5 @@
 package kyu6;
 
-import kyu8.MaxAndMinFromAList;
 import org.junit.jupiter.api.*;
 
 import java.text.DecimalFormat;
