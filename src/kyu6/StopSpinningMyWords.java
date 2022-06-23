@@ -1,4 +1,4 @@
-//LEVEL: kyu 7
+//LEVEL: kyu 6
 //link: https://www.codewars.com/kata/5264d2b162488dc400000001/train/java
 
 /*DESCRIPTION
