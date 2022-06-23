@@ -18,6 +18,7 @@
     <li><a href="https://www.codewars.com/kata/514b92a657cdc65150000006/train/java">MultiplesOf3Or5</a></li>
     <li><a href="https://www.codewars.com/kata/5503013e34137eeeaa001648/train/java">GiveMeADiamond</a></li>
     <li><a href="https://www.codewars.com/kata/5552101f47fc5178b1000050/train/java">PlayingWithDigits</a></li>
+    <li><a href="https://www.codewars.com/kata/525f47c79f2f25a4db000025/train/java">ValidPhoneNumber</a></li>
 </ul>
 <ul>
     <b>KYU 7</b>
