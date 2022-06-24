@@ -36,5 +36,6 @@
     <li><a href="https://www.codewars.com/kata/59342039eb450e39970000a6/train/java">CountOddNumbers</a></li>
     <li><a href="https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/java">CountOfPositivesSumOfNegatives</a></li>
     <li><a href="https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/java">ReversedString</a></li>
+    <li><a href="https://www.codewars.com/kata/5265326f5fda8eb1160004c8/train/java">ConvertNumberToString</a></li>
 </ul>
 
