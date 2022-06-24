@@ -27,6 +27,7 @@
     <li><a href="https://www.codewars.com/kata/62a611067274990047f431a8/train/java">LengthAndTwoValues</a></li>
     <li><a href="https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/java">TwoToOne</a></li>
     <li><a href="https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/java">Mumbling</a></li>
+    <li><a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/java">Isograms</a></li>
 </ul>
 <ul>
     <b>KYU 8</b>:
