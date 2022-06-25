@@ -21,6 +21,7 @@
     <li><a href="https://www.codewars.com/kata/525f47c79f2f25a4db000025/train/java">ValidPhoneNumber</a></li>
     <li><a href="https://www.codewars.com/kata/5264d2b162488dc400000001/train/java">StopSpinningMyWords</a></li>
     <li><a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/java">PersistentBugger</a></li>
+    <li><a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/java">DeleteOccurrencesIfMoreThanNTimes</a></li>
 </ul>
 <ul>
     <b>KYU 7</b>
