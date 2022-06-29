@@ -8,6 +8,10 @@
 
 <p align="justify">Next, will find the links of the exercises that are solved in this repository. The links are to see the Katas (denomination gave it by Codewars for the proposals) on the website of Codewars. The names are the same of the classes, to make more easy to find the resolution on the code.</p>
 <ul>
+    <b>KYU 4</b>:
+    <li><a href="https://www.codewars.com/kata/54d496788776e49e6b00052f/train/java">SumByFactors</a></li>
+</ul>
+<ul>
     <b>KYU 5</b>:
     <li><a href="https://www.codewars.com/kata/5547cc7dcad755e480000004/train/java">IsMyFriendCheating</a></li>
     <li><a href="https://www.codewars.com/kata/5270d0d18625160ada0000e4/train/java">Greed</a></li>
