@@ -60,5 +60,22 @@ public class SumByFactors {
         return false;
     } //end function
 
+
+    public static String sumOfDividedOther(int[] l) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int number:l) {
+            int i = number < 0 ? -number:number; //Conversion from negative to positive.
+            for(int j = 2; j <= i; j++) {
+                if (i%j == 0) map.put(j, map.get(j) == null ? number : map.get(j)+number);
+                while(i%j == 0) i /= j;
+            }
+        }
+        return map.entrySet().stream()
+                .sorted(Comparator.comparing(Map.Entry::getKey))
+                .map(e -> String.format("(%d %d)",e.getKey(),e.getValue()))
+                .reduce((x,y) -> x+y)
+                .get();
+    }
+
 }
 
