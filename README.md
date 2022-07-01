@@ -28,6 +28,7 @@
     <li><a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/java">PersistentBugger</a></li>
     <li><a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/java">DeleteOccurrencesIfMoreThanNTimes</a></li>
     <li><a href="https://www.codewars.com/kata/550498447451fbbd7600041c/train/java">AreSame</a></li>
+    <li><a href="https://www.codewars.com/kata/5208f99aee097e6552000148/train/java">BreakCamelCase</a></li>
 </ul>
 <ul>
     <b>KYU 7</b>
