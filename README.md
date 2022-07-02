@@ -15,6 +15,7 @@
     <b>KYU 5</b>:
     <li><a href="https://www.codewars.com/kata/5547cc7dcad755e480000004/train/java">IsMyFriendCheating</a></li>
     <li><a href="https://www.codewars.com/kata/5270d0d18625160ada0000e4/train/java">Greed</a></li>
+    <li><a href="https://www.codewars.com/kata/515bb423de843ea99400000a/train/java">PaginationHelper</a></li>
 </ul>
 <ul>
     <b>KYU 6</b>:
