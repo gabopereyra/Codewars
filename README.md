@@ -42,6 +42,7 @@
     <li><a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/java">Isograms</a></li>
     <li><a href="https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/java">VowelCount</a></li>
     <li><a href="https://www.codewars.com/kata/52fba66badcd10859f00097e/train/java">DisemvowelTrolls</a></li>
+    <li><a href="https://www.codewars.com/kata/546e2562b03326a88e000020/train/java">SquareEveryDigit</a></li>
 </ul>
 <ul>
     <b>KYU 8</b>:
