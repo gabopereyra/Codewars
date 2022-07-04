@@ -44,6 +44,7 @@
     <li><a href="https://www.codewars.com/kata/52fba66badcd10859f00097e/train/java">DisemvowelTrolls</a></li>
     <li><a href="https://www.codewars.com/kata/546e2562b03326a88e000020/train/java">SquareEveryDigit</a></li>
     <li><a href="https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/java">ListFiltering</a></li>
+    <li><a href="https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/java">DescendingOrder</a></li>
 </ul>
 <ul>
     <b>KYU 8</b>:
