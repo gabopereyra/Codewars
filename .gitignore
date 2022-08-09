@@ -5,3 +5,4 @@
 CodeWars.iml
 out/*
 /src/Main.java
+/src/ToIgnore/*
