@@ -26,30 +26,20 @@ package kyu5;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.IntStream;
 
 public class IsMyFiendCheating {
     public static List<long[]> removNb(long n) {
-        List<long[]> res = new ArrayList<>();
-        long sum = IntStream.range(1, (int) n+1).sum();
-        long minimum = sum/n;
-        long maximum = n;
+        List<long[]> result = new ArrayList<>();
+        long sum = n * (n + 1) / 2;
 
+        for (long x = 1; x <= n; x++) {
 
-        while (minimum < maximum){
-            long sumAux = sum - (minimum+maximum);
-            long product = (minimum*maximum);
-
-            if(product>sumAux){
-                maximum--;
-            } else if (product <sumAux) {
-                minimum++;
-            } else if (product == sumAux) {
-                res.add(new long[] {minimum, maximum});
-                res.add(new long[] {maximum, minimum});
-                minimum++;
+            long y = (sum - x) / (x + 1);
+            if (y <= n && x * y == sum - x - y) {
+                result.add(new long[] {x, y});
             }
         }
-        return res;
+
+        return result;
     }
 }
