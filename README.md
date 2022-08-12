@@ -15,6 +15,7 @@
     <b>KYU 4</b>:
     <li><a href="https://www.codewars.com/kata/54d496788776e49e6b00052f/train/java">SumByFactors</a></li>
     <li><a href="https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/java">StripComments</a></li>
+    <li><a href="https://www.codewars.com/kata/5254ca2719453dcc0b00027d/train/java">Permutations</a></li>
 </ul>
 <ul>
     <b>KYU 5</b>:
