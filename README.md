@@ -38,6 +38,7 @@
     <li><a href="https://www.codewars.com/kata/550498447451fbbd7600041c/train/java">AreSame</a></li>
     <li><a href="https://www.codewars.com/kata/5208f99aee097e6552000148/train/java">BreakCamelCase</a></li>
     <li><a href="https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/java">PangramChecker</a></li>
+    <li><a href="https://www.codewars.com/kata/5848565e273af816fb000449/train/java">EncryptThis</a></li>
 </ul>
 <ul>
     <b>KYU 7</b>
