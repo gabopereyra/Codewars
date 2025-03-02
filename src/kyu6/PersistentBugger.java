@@ -14,6 +14,9 @@ For example (Input --> Output):
 
 package kyu6;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class PersistentBugger {
     public static int persistence(long n) {
         int count = 0;
@@ -27,5 +30,13 @@ public class PersistentBugger {
             count++;
         }
         return count;
+    }
+
+    @Test
+    public void BasicTests() {
+        Assertions.assertEquals(3, persistence(39));
+        Assertions.assertEquals(0, persistence(4));
+        Assertions.assertEquals(2, persistence(25));
+        Assertions.assertEquals(4, persistence(999));
     }
 }

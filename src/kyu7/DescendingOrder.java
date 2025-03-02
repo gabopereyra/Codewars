@@ -13,6 +13,9 @@ Input: 123456789 Output: 987654321
 
 package kyu7;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
@@ -22,5 +25,20 @@ public class DescendingOrder {
                 .chars().mapToObj(a -> String.valueOf((char) a))
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.joining("")));
+    }
+
+    @Test
+    public void test_01() {
+        Assertions.assertEquals(0, sortDesc(0));
+    }
+
+    @Test
+    public void test_02() {
+        Assertions.assertEquals(51, sortDesc(15));
+    }
+
+    @Test
+    public void test_03() {
+        Assertions.assertEquals(987654321, sortDesc(123456789));
     }
 }

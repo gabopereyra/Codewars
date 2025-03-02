@@ -15,6 +15,9 @@ Examples:
 
 package kyu6;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
@@ -48,4 +51,15 @@ public class StopSpinningMyWords {
                 .collect(Collectors.joining(" "));
     }
 
+    @Test
+    public void test() {
+        Assertions.assertEquals("emocleW", spinWords("Welcome"));
+        Assertions.assertEquals("Hey wollef sroirraw", spinWords("Hey fellow warriors"));
+    }
+
+    @Test
+    public void testWithStream() {
+        Assertions.assertEquals("emocleW", spinWordsWithStream("Welcome"));
+        Assertions.assertEquals("Hey wollef sroirraw", spinWordsWithStream("Hey fellow warriors"));
+    }
 }

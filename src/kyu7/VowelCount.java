@@ -11,9 +11,16 @@ The input string will only consist of lower case letters and/or spaces.
 
 package kyu7;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class VowelCount {
     public static int getCount(String str) {
         return (int) str.toLowerCase().chars().filter(a -> a=='a' || a=='e' ||a=='i' ||a=='o' ||a=='u').count();
     }
 
+    @Test
+    public void testCase1() {
+        Assertions.assertEquals(5, getCount("abracadabra"));
+    }
 }

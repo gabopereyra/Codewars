@@ -11,6 +11,9 @@
 
 package kyu6;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.stream.IntStream;
 
 public class MultiplesOf3Or5 {
@@ -31,5 +34,19 @@ public class MultiplesOf3Or5 {
         return IntStream.range(0, number)
                 .filter(n -> (n % 3 == 0) || (n % 5 == 0))
                 .sum();
+    }
+
+    @Test
+    public void test() {
+        Assertions.assertEquals(23, solution(10)); //3 5 6 9
+        Assertions.assertEquals(78, solution(20)); //3 5 6 9 10 12 15 18
+        Assertions.assertEquals(195, solution(30)); //3 5 6 9 10 12 15 18 20 21 24 25 27
+    }
+
+    @Test
+    public void testWithStream() {
+        Assertions.assertEquals(23, solutionWithStream(10)); //3 5 6 9
+        Assertions.assertEquals(78, solutionWithStream(20)); //3 5 6 9 10 12 15 18
+        Assertions.assertEquals(195, solutionWithStream(30)); //3 5 6 9 10 12 15 18 20 21 24 25 27
     }
 }

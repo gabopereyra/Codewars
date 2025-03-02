@@ -17,6 +17,9 @@ bananas !apples
 
 package kyu4;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -30,5 +33,19 @@ public class StripComments {
                 .stream()
                 .map(a -> a.replaceAll(regex, "").stripTrailing())
                 .collect(Collectors.joining("\n"));
+    }
+
+    @Test
+    public void stripComments() throws Exception {
+        Assertions.assertEquals(
+                "apples, pears\ngrapes\nbananas",
+                stripComments("apples, pears # and bananas\ngrapes\nbananas !apples", new String[]{"#", "!"})
+        );
+
+        Assertions.assertEquals(
+                "a\nc\nd",
+                stripComments("a #b\nc\nd $e f g", new String[]{"#", "$"})
+        );
+
     }
 }

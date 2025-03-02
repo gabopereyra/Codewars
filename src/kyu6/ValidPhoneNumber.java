@@ -16,11 +16,21 @@
 
 package kyu6;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidPhoneNumber {
     public static boolean validPhoneNumber(String phoneNumber) {
         return phoneNumber.matches("\\(\\d{3}\\)\\s\\d{3}-\\d{4}");
+    }
+
+    @Test
+    public void tests() {
+        Assertions.assertEquals(false, validPhoneNumber("(098) 123 4567"));
+        Assertions.assertEquals(false, validPhoneNumber("(1111)555 2345"));
+        Assertions.assertEquals(true, validPhoneNumber("(123) 456-7890"));
     }
 }

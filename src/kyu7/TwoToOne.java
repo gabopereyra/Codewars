@@ -19,10 +19,20 @@
 
 package kyu7;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.stream.Collectors;
 
 public class TwoToOne {
     public static String longest (String s1, String s2) {
         return (s1+s2).codePoints().distinct().mapToObj(c -> String.valueOf((char) c)).sorted().collect(Collectors.joining());
+    }
+
+    @Test
+    public void test() {
+        Assertions.assertEquals("aehrsty", longest("aretheyhere", "yestheyarehere"));
+        Assertions.assertEquals("abcdefghilnoprstu", longest("loopingisfunbutdangerous", "lessdangerousthancoding"));
+        Assertions.assertEquals("acefghilmnoprstuy", longest("inmanylanguages", "theresapairoffunctions"));
     }
 }

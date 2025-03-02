@@ -10,8 +10,21 @@
 
 package kyu8;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class ReversedString {
     public static String solution(String str) {
         return new StringBuilder(str).reverse().toString();
+    }
+
+    @Test
+    public void sampleTests() {
+        Assertions.assertEquals("dlrow", ReversedString.solution("world"));
+    }
+
+    @Test
+    public void sampleTests2() {
+        Assertions.assertEquals("olleh", ReversedString.solution("hello"));
     }
 }

@@ -16,6 +16,9 @@ Example: (Input --> Output)
 
 package kyu7;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.stream.Collectors;
 
 public class Isograms {
@@ -24,5 +27,17 @@ public class Isograms {
         String aux = str.chars().mapToObj(i -> String.valueOf((char) i).toLowerCase()).distinct().collect(Collectors.joining());
 
         return str.length() == aux.length();
+    }
+
+    @Test
+    public void FixedTests() {
+        Assertions.assertEquals(true, isIsogram("Dermatoglyphics"));
+        Assertions.assertEquals(false, isIsogram("moose"));
+        Assertions.assertEquals(true, isIsogram("isogram"));
+        Assertions.assertEquals(false, isIsogram("isIsogram"));
+        Assertions.assertEquals(false, isIsogram("aba"));
+        Assertions.assertEquals(false, isIsogram("moOse"));
+        Assertions.assertEquals(true, isIsogram("thumbscrewjapingly"));
+        Assertions.assertEquals(true, isIsogram(""));
     }
 }

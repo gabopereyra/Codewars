@@ -13,8 +13,17 @@
 
 package kyu8;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class CountOddNumbers {
     public static int oddCount(int n){
         return n/2;
+    }
+
+    @Test
+    public void fixedTests() {
+        Assertions.assertEquals(7, oddCount(15));
+        Assertions.assertEquals(7511, oddCount(15023));
     }
 }

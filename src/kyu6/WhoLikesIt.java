@@ -16,6 +16,9 @@
 
 package kyu6;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class WhoLikesIt {
     public static String finalString(String... names) {
         String finalString = "";
@@ -38,5 +41,16 @@ public class WhoLikesIt {
                 break;
         }
         return finalString;
-    } //end function
-} //end public class
+    }
+
+    @Test
+    public void staticTests() {
+        Assertions.assertEquals("no one likes this", finalString());
+        Assertions.assertEquals("Peter likes this", finalString("Peter"));
+        Assertions.assertEquals("Jacob and Alex like this", finalString("Jacob", "Alex"));
+        Assertions.assertEquals("Max, John and Mark like this", finalString("Max", "John", "Mark"));
+        Assertions.assertEquals("Alex, Jacob and 2 others like this", finalString("Alex", "Jacob", "Mark", "Max"));
+        Assertions.assertEquals("Alex, Jacob and 3 others like this", finalString("Alex", "Jacob", "Mark", "Max", "Pedro"));
+    }
+
+}

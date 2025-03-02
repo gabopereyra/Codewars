@@ -29,6 +29,9 @@
 
 package kyu8;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 
 public class SumArray {
@@ -42,5 +45,25 @@ public class SumArray {
 
     public static double sumWithStream(double[] numbers) {
         return Arrays.stream(numbers).sum();
+    }
+
+    @Test
+    public void testSum() {
+        Assertions.assertEquals(0,      sum(new double[] { }),                1e-4);
+        Assertions.assertEquals(-2.398, sum(new double[] {-2.398}),           1e-4);
+        Assertions.assertEquals(6,      sum(new double[] {1, 2, 3}),          1e-4);
+        Assertions.assertEquals(6.6,    sum(new double[] {1.1, 2.2, 3.3}),    1e-4);
+        Assertions. assertEquals(9.2,    sum(new double[] {1, 5.2, 4, 0, -1}), 1e-4);
+        Assertions.assertEquals(320,    sum(new double[] {30, 89, 100, 101}), 1e-4);
+    }
+
+    @Test
+    public void testSumWithStream() {
+        Assertions.assertEquals(0,      sumWithStream(new double[] { }),                1e-4);
+        Assertions.assertEquals(-2.398, sumWithStream(new double[] {-2.398}),           1e-4);
+        Assertions.assertEquals(6,      sumWithStream(new double[] {1, 2, 3}),          1e-4);
+        Assertions.assertEquals(6.6,    sumWithStream(new double[] {1.1, 2.2, 3.3}),    1e-4);
+        Assertions. assertEquals(9.2,    sumWithStream(new double[] {1, 5.2, 4, 0, -1}), 1e-4);
+        Assertions.assertEquals(320,    sumWithStream(new double[] {30, 89, 100, 101}), 1e-4);
     }
 }

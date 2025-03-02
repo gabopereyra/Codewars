@@ -25,9 +25,26 @@
 
 package kyu7;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class YouAreASquare {
     public static boolean isSquare(int n) {
         return (Math.sqrt(n)%1 == 0);
     }
 
+    @Test
+    public void shouldWorkForSomeExamples() throws Exception {
+        Assertions.assertFalse(isSquare(-1), "negative numbers aren't square numbers");
+        Assertions.assertFalse(isSquare(3), "3 isn't a square number");
+        Assertions.assertFalse(isSquare(26), "26 isn't a square number");
+        Assertions.assertFalse(isSquare(17), "17 isn't a square number");
+
+        Assertions.assertTrue(isSquare(0), "0 is a square number (0 * 0)");
+        Assertions.assertTrue(isSquare(4), "4 is a square number (2 * 2)");
+        Assertions.assertTrue(isSquare(25),"25 is a square number (5 * 5)");
+        Assertions.assertTrue(isSquare(36),"36 is a square number (6 * 6)");
+        Assertions.assertTrue(isSquare(121),"25 is a square number (11 * 11)");
+
+    }
 }

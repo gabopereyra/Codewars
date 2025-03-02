@@ -21,6 +21,9 @@ With list [20,37,20,21] and number 1, the result would be [20,37,21].
 
 package kyu6;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.*;
 import java.util.stream.IntStream;
 
@@ -48,5 +51,55 @@ public class DeleteOccurrencesIfMoreThanNTimes {
         return IntStream.of(elements)
                 .filter(motif -> occurrence.merge(motif, 1, Integer::sum) <= maxOccurrences)
                 .toArray();
+    }
+
+    @Test
+    public void deleteNth(){
+        Assertions.assertArrayEquals(
+                new int[] { 20, 37, 21 },
+                deleteNth( new int[] { 20, 37, 20, 21 }, 1 )
+        );
+        Assertions.assertArrayEquals(
+                new int[] { 1, 1, 3, 3, 7, 2, 2, 2 },
+                deleteNth( new int[] { 1, 1, 3, 3, 7, 2, 2, 2, 2 }, 3 )
+
+        );
+        Assertions.assertArrayEquals(
+                new int[] { 1, 2, 3, 1, 1, 2, 2, 3, 3, 4, 5 },
+                deleteNth( new int[] { 1, 2, 3, 1, 1, 2, 1, 2, 3, 3, 2, 4, 5, 3, 1 }, 3 )
+        );
+        Assertions.assertArrayEquals(
+                new int[] { 1, 1, 1, 1, 1 },
+                deleteNth( new int[] { 1, 1, 1, 1, 1 }, 5 )
+        );
+        Assertions.assertArrayEquals(
+                new int[] { },
+                deleteNth( new int[] { }, 5 )
+        );
+    }
+
+    @Test
+    public void deleteNthWithStream(){
+        Assertions.assertArrayEquals(
+                new int[] { 20, 37, 21 },
+                deleteNthWithStream( new int[] { 20, 37, 20, 21 }, 1 )
+        );
+        Assertions.assertArrayEquals(
+                new int[] { 1, 1, 3, 3, 7, 2, 2, 2 },
+                deleteNthWithStream( new int[] { 1, 1, 3, 3, 7, 2, 2, 2, 2 }, 3 )
+
+        );
+        Assertions.assertArrayEquals(
+                new int[] { 1, 2, 3, 1, 1, 2, 2, 3, 3, 4, 5 },
+                deleteNthWithStream( new int[] { 1, 2, 3, 1, 1, 2, 1, 2, 3, 3, 2, 4, 5, 3, 1 }, 3 )
+        );
+        Assertions.assertArrayEquals(
+                new int[] { 1, 1, 1, 1, 1 },
+                deleteNthWithStream( new int[] { 1, 1, 1, 1, 1 }, 5 )
+        );
+        Assertions.assertArrayEquals(
+                new int[] { },
+                deleteNthWithStream( new int[] { }, 5 )
+        );
     }
 }

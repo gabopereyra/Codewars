@@ -14,6 +14,9 @@ Notes: You may consider that there will not be any empty arrays/vectors.
 * */
 package kyu8;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 
 public class MaxAndMinFromAList {
@@ -45,4 +48,19 @@ public class MaxAndMinFromAList {
         return Arrays.stream(list).max().getAsInt();
     }
 
+    @Test
+    public void testExamples() {
+        Assertions.assertEquals(-110, min(new int[]{-52, 56, 30, 29, -54, 0, -110}));
+        Assertions.assertEquals(0, min(new int[]{42, 54, 65, 87, 0}));
+        Assertions.assertEquals(566, max(new int[]{4,6,2,1,9,63,-134,566}));
+        Assertions.assertEquals(5, max(new int[]{5}));
+    }
+
+    @Test
+    public void testExamplesWithStream() {
+        Assertions.assertEquals(-110, minWithStream(new int[]{-52, 56, 30, 29, -54, 0, -110}));
+        Assertions.assertEquals(0, minWithStream(new int[]{42, 54, 65, 87, 0}));
+        Assertions.assertEquals(566, maxWithStream(new int[]{4,6,2,1,9,63,-134,566}));
+        Assertions.assertEquals(5, maxWithStream(new int[]{5}));
+    }
 }

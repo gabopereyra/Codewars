@@ -25,6 +25,9 @@ BOOKKEEPER = 10743
 
 package kyu3;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
@@ -49,5 +52,15 @@ public class Anagrams {
             suffixPermCount = suffixPermCount.divide(xCount);
         }
         return rank;
+    }
+
+    @Test
+    public void testKnownInputs() {
+        Assertions.assertEquals(BigInteger.ONE, listPosition("A"));
+        Assertions.assertEquals(BigInteger.valueOf(2), listPosition("ABAB"));
+        Assertions.assertEquals(BigInteger.ONE, listPosition("AAAB"));
+        Assertions.assertEquals(BigInteger.valueOf(4), listPosition("BAAA"));
+        Assertions.assertEquals(BigInteger.valueOf(24572), listPosition("QUESTION"));
+        Assertions.assertEquals(BigInteger.valueOf(10743), listPosition("BOOKKEEPER"));
     }
 }

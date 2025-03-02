@@ -20,6 +20,9 @@
 
 package kyu6;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class PlayingWithDigits {
     public static long digPow(int n, int p) {
         char[] digits = String.valueOf(n).toCharArray();
@@ -33,5 +36,18 @@ public class PlayingWithDigits {
             return division;
         }
         return -1;
+    }
+
+    @Test
+    public void Test1() {
+        Assertions.assertEquals(1, digPow(89, 1));
+    }
+    @Test
+    public void Test2() {
+        Assertions.assertEquals(-1, digPow(92, 1));
+    }
+    @Test
+    public void Test3() {
+        Assertions.assertEquals(51, digPow(46288, 3));
     }
 }

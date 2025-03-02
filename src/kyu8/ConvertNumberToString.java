@@ -14,8 +14,18 @@ Don't forget the space after the closing parentheses!
 
 package kyu8;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class ConvertNumberToString {
     public static String numberToString(int num) {
         return String.valueOf(num);
+    }
+
+    @Test
+    public void tests() {
+        Assertions.assertEquals("67", numberToString(67));
+        Assertions.assertEquals("123", numberToString(123));
+        Assertions.assertEquals("999", numberToString(999));
     }
 }

@@ -11,6 +11,9 @@ Note: The function accepts an integer and returns an integer
 
 package kyu7;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.stream.Collectors;
 
 public class SquareEveryDigit {
@@ -21,5 +24,11 @@ public class SquareEveryDigit {
                 .map(i -> i * i)
                 .mapToObj(String::valueOf)
                 .collect(Collectors.joining("")));
+    }
+
+    @Test
+    public void test() {
+        Assertions.assertEquals(811181, squareDigits(9119));
+        Assertions.assertEquals(0, squareDigits(0));
     }
 }

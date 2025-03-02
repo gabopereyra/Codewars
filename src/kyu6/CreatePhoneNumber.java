@@ -14,6 +14,9 @@ Don't forget the space after the closing parentheses!
 
 package kyu6;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.stream.IntStream;
 
 public class CreatePhoneNumber {
@@ -47,5 +50,18 @@ public class CreatePhoneNumber {
 
     public static String createPhoneNumberWithStream(int[] numbers) {
         return String.format("(%d%d%d) %d%d%d-%d%d%d%d", IntStream.of(numbers).boxed().toArray());
+    }
+
+    @Test
+    public void tests() {
+        Assertions.assertEquals("(123) 456-7890", createPhoneNumber(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}));
+    }
+    @Test
+    public void testsOtherWay() {
+        Assertions.assertEquals("(123) 456-7890", createPhoneNumberOtherWay(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}));
+    }
+    @Test
+    public void testsWithStream() {
+        Assertions.assertEquals("(123) 456-7890", createPhoneNumberWithStream(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}));
     }
 }

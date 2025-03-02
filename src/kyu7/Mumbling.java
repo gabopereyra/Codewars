@@ -15,6 +15,9 @@
 
 package kyu7;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -40,5 +43,21 @@ public class Mumbling {
         return IntStream.range(0, aux.length)
                         .mapToObj(i -> aux[i].toUpperCase() + aux[i].toLowerCase().repeat(i))
                         .collect(Collectors.joining("-"));
+    }
+    @Test
+    public void test() {
+        Assertions.assertEquals( "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu", accum("ZpglnRxqenU"));
+        Assertions.assertEquals( "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb", accum("NyffsGeyylB"));
+        Assertions.assertEquals( "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu", accum("MjtkuBovqrU"));
+        Assertions.assertEquals( "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm", accum("EvidjUnokmM"));
+        Assertions.assertEquals( "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc", accum("HbideVbxncC"));
+    }
+    @Test
+    public void testWithStream() {
+        Assertions.assertEquals( "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu", accumWithStream("ZpglnRxqenU"));
+        Assertions.assertEquals( "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb", accumWithStream("NyffsGeyylB"));
+        Assertions.assertEquals( "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu", accumWithStream("MjtkuBovqrU"));
+        Assertions.assertEquals( "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm", accumWithStream("EvidjUnokmM"));
+        Assertions.assertEquals( "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc", accumWithStream("HbideVbxncC"));
     }
 }

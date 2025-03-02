@@ -17,8 +17,13 @@
 
 package kyu4;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Permutations {
     public static List<String> singlePermutations(String s) {
@@ -46,5 +51,23 @@ public class Permutations {
             permutations(newCandidate, newRemaining, result);
         }
         return result;
+    }
+
+    @Test
+    public void example1() {
+        Assertions.assertEquals(new ArrayList<String>(Arrays.asList("a")),
+                singlePermutations("a").stream().sorted().collect(Collectors.toList()));
+    }
+
+    @Test
+    public void example2() {
+        Assertions.assertEquals(new ArrayList<String>(Arrays.asList("ab", "ba")),
+                singlePermutations("ab").stream().sorted().collect(Collectors.toList()));
+    }
+
+    @Test
+    public void example3() {
+        Assertions.assertEquals(new ArrayList<String>(Arrays.asList("aabb", "abab", "abba", "baab", "baba", "bbaa")),
+                singlePermutations("aabb").stream().sorted().collect(Collectors.toList()));
     }
 }

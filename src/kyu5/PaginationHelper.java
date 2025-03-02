@@ -26,11 +26,14 @@ helper.pageIndex(-10); //should == -1
 
 package kyu5;
 
-import java.util.ArrayList;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
 import java.util.List;
 
 public class PaginationHelper<I> {
-    List<I> collection = new ArrayList<I>();
+    List<I> collection;
     int itemsPerPage;
 
     /**
@@ -46,14 +49,14 @@ public class PaginationHelper<I> {
      * returns the number of items within the entire collection
      */
     public int itemCount() {
-        return collection.size(); // TODO borrar, este esta bien
+        return collection.size();
     }
 
     /**
      * returns the number of pages
      */
     public int pageCount() {
-        return (int) Math.ceil(collection.size()/(double) itemsPerPage); // TODO borrar, este esta bien
+        return (int) Math.ceil(collection.size()/(double) itemsPerPage);
     }
 
     /**
@@ -83,4 +86,45 @@ public class PaginationHelper<I> {
 
         return (itemIndex/itemsPerPage);
     }
+}
+
+class PaginationHelperTest {
+    PaginationHelper<Character> helper = new PaginationHelper(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f'), 4);
+    PaginationHelper<Character> helperEmpty = new PaginationHelper(Arrays.asList(), 4);
+
+    @Test
+    public void pageCount() {
+        Assertions.assertEquals(2, helper.pageCount());
+    }
+
+    @Test
+    public void itemCount() {
+        Assertions.assertEquals(6, helper.itemCount());
+    }
+
+    @Test
+    public void pageItemCount() {
+        Assertions.assertEquals(4, helper.pageItemCount(0));
+        Assertions.assertEquals(2, helper.pageItemCount(1));
+        Assertions.assertEquals(-1, helper.pageItemCount(2));
+    }
+
+    @Test
+    public void pageIndex() {
+        Assertions.assertEquals(1, helper.pageIndex(5));
+        Assertions.assertEquals(0, helper.pageIndex(2));
+        Assertions.assertEquals(-1, helper.pageIndex(20));
+        Assertions.assertEquals(-1, helper.pageIndex(-5));
+    }
+
+    @Test
+    public void pageItemCountEmptyCollection() {
+        Assertions.assertEquals(-1, helperEmpty.pageItemCount(0));
+    }
+
+    @Test
+    public void pageIndexEmptyCollection() {
+        Assertions.assertEquals(-1, helperEmpty.pageIndex(5));
+    }
+
 }

@@ -73,7 +73,6 @@ public class Spiralizor {
     }
 
     @Test
-    @Disabled
     void test5() {
         assertArrayEquals(
                 new int[][]{

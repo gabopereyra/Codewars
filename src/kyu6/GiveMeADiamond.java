@@ -32,6 +32,9 @@
 
 package kyu6;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -73,4 +76,92 @@ public class GiveMeADiamond {
                 .collect(Collectors.joining());
     }
 
+    @Test
+    public void testDiamond3() {
+        StringBuffer expected = new StringBuffer();
+        expected.append(" *\n");
+        expected.append("***\n");
+        expected.append(" *\n");
+
+        Assertions.assertEquals(expected.toString(), print(3));
+    }
+
+    @Test
+    public void testDiamond5() {
+        StringBuffer expected = new StringBuffer();
+        expected.append("  *\n");
+        expected.append(" ***\n");
+        expected.append("*****\n");
+        expected.append(" ***\n");
+        expected.append("  *\n");
+
+        Assertions.assertEquals(expected.toString(), print(5));
+    }
+
+    @Test
+    public void testDiamond1() {
+        StringBuffer expected = new StringBuffer();
+        expected.append("*\n");
+        Assertions.assertEquals(expected.toString(), print(1));
+    }
+
+    @Test
+    public void testDiamond0() {
+        Assertions.assertEquals(null, print(0));
+    }
+
+    @Test
+    public void testDiamondMinus2() {
+        Assertions.assertEquals(null, print(-2));
+    }
+
+    @Test
+    public void testDiamond2() {
+        Assertions.assertEquals(null, print(2));
+    }
+
+    ///
+    @Test
+    public void testDiamond3WithStream() {
+        StringBuffer expected = new StringBuffer();
+        expected.append(" *\n");
+        expected.append("***\n");
+        expected.append(" *\n");
+
+        Assertions.assertEquals(expected.toString(), printWithStream(3));
+    }
+
+    @Test
+    public void testDiamond5WithStream() {
+        StringBuffer expected = new StringBuffer();
+        expected.append("  *\n");
+        expected.append(" ***\n");
+        expected.append("*****\n");
+        expected.append(" ***\n");
+        expected.append("  *\n");
+
+        Assertions.assertEquals(expected.toString(), printWithStream(5));
+    }
+
+    @Test
+    public void testDiamond1WithStream() {
+        StringBuffer expected = new StringBuffer();
+        expected.append("*\n");
+        Assertions.assertEquals(expected.toString(), printWithStream(1));
+    }
+
+    @Test
+    public void testDiamond0WithStream() {
+        Assertions.assertEquals(null, printWithStream(0));
+    }
+
+    @Test
+    public void testDiamondMinus2WithStream() {
+        Assertions.assertEquals(null, printWithStream(-2));
+    }
+
+    @Test
+    public void testDiamond2WithStream() {
+        Assertions.assertEquals(null, printWithStream(2));
+    }
 }
