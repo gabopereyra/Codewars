@@ -10,6 +10,7 @@
 <ul>
     <b>KYU 3</b>:
     <li><a href="https://www.codewars.com/kata/53e57dada0cb0400ba000688/train/java">Anagrams</a></li>
+    <li><a href="https://www.codewars.com/kata/534e01fbbb17187c7e0000c6/train/java">Make a spiral</a></li>
 </ul>
 <ul>
     <b>KYU 4</b>:
