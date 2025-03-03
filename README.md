@@ -42,6 +42,7 @@
     <li><a href="https://www.codewars.com/kata/5848565e273af816fb000449/java">EncryptThis</a></li>
     <li><a href="https://www.codewars.com/kata/58ad2e9c0e3c08126000003f/java">NotSoRandom</a></li>
     <li><a href="https://www.codewars.com/kata/58a3a735cebc0630830000c0/java">StringConstructing</a></li>
+    <li><a href="https://www.codewars.com/kata/54da5a58ea159efa38000836/java">FindTheOddInt</a></li>
 </ul>
 <ul>
     <b>KYU 7</b>
