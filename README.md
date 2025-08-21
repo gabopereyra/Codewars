@@ -24,6 +24,8 @@
     <li><a href="https://www.codewars.com/kata/5270d0d18625160ada0000e4/java">Greed</a></li>
     <li><a href="https://www.codewars.com/kata/515bb423de843ea99400000a/java">PaginationHelper</a></li>
     <li><a href="https://www.codewars.com/kata/52685f7382004e774f0001f7/java">HumanReadableTime</a></li>
+    <li><a href="https://www.codewars.com/kata/51fc3beb41ecc97ee20000c3/java">LazyRepeater</a></li>
+    <li><a href="https://www.codewars.com/kata/55aa075506463dac6600010d/java">IntegersRecreationOne</a></li>
 </ul>
 <ul>
     <b>KYU 6</b>:
@@ -43,6 +45,7 @@
     <li><a href="https://www.codewars.com/kata/58ad2e9c0e3c08126000003f/java">NotSoRandom</a></li>
     <li><a href="https://www.codewars.com/kata/58a3a735cebc0630830000c0/java">StringConstructing</a></li>
     <li><a href="https://www.codewars.com/kata/54da5a58ea159efa38000836/java">FindTheOddInt</a></li>
+    <li><a href="https://www.codewars.com/kata/523f5d21c841566fde000009/java">ArrayDiff</a></li>
 </ul>
 <ul>
     <b>KYU 7</b>
